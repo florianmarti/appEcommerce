@@ -6,13 +6,13 @@ import { useParams } from "react-router-dom";
 const ItemListConteiner = ({ wellcome }) => {
   const [Productos, setProductos] = useState([]);
 
-  const { categoriaId } = useParams();
+  const { catId } = useParams();
 
   useEffect(() => {
-    if (categoriaId) {
+    if (catId) {
       getProductos()
         .then((response) => {
-          setProductos(response);
+          setProductos(response.filter((item) => item.categoria === catId));
         })
         .catch((error) => {
           console.log(error);
@@ -26,7 +26,7 @@ const ItemListConteiner = ({ wellcome }) => {
           console.log(error);
         });
     }
-  }, [categoriaId]);
+  }, [catId]);
 
   return (
     <div>

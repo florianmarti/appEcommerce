@@ -1,14 +1,10 @@
-import mate from "./Componentes/assets/Images/mate.jpg";
-import bombi from "./Componentes/assets/Images/bombilla.jpg";
-import yerbera from "./Componentes/assets/Images/yerbera.jpg";
-
 const productos = [
   {
     id: "1",
     nombre: "Mate Polenta",
     categoria: "Regional",
     descripcion: "Mate Regional Gaucho",
-    img: mate,
+    img: "../assets/Images/mate.jpg",
     precio: "1000",
   },
   {
@@ -16,7 +12,7 @@ const productos = [
     nombre: "Bombiya larga",
     categoria: "Bombillas",
     descripcion: "Bombiya de Spiderman",
-    img: bombi,
+    img: "../assets/Images/bombilla.jpg",
     precio: "350",
   },
   {
@@ -24,7 +20,7 @@ const productos = [
     nombre: "Yerbera autoctona Guarani",
     categoria: "Regional",
     descripcion: "Yerbera Pampeana",
-    img: yerbera,
+    img: "../assets/Images/yerbera.jpg",
     precio: "500",
   },
 ];
